@@ -35,7 +35,7 @@ public Task pickNextTask(){
 
         for(int i = 1; i < queue.size(); i++){
             Task currentTask = queue.get(i);
-            if (currentTask.getPriority() < highestPriority.getPriority()){
+            if (currentTask.getPriority() > highestPriority.getPriority()){
                 highestPriority = currentTask;
             }
         }
